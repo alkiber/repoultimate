@@ -25,4 +25,28 @@
   <extension point="xbmc.service" library="service.py" start="login|startup">
   </extension>
 </addon>
+
+<addon id="plugin.video.Wizard"
+	   name="plugin.video.Wizard"
+	   version="1.0.1"
+	   provider-name="YO MISMO">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/alkiber/repoultimate/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/alkiber/repoultimate/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/alkiber/master/Repositorio/</datadir>
+    </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Wizard</summary>
+    <description>Instalador inteligente que ayuda a configurar tu Kodi correctamente</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
